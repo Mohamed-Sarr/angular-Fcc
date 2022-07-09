@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world.component';
 import { ChildComponent } from './child/child.component';
 import { ParentComponent } from './parent/parent.component';
 import { HighlightDirective } from './highlight.directive';
-
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,9 +15,13 @@ import { HighlightDirective } from './highlight.directive';
     ChildComponent,
     ParentComponent,
     HighlightDirective,
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

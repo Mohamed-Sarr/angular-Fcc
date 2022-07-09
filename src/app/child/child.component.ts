@@ -10,7 +10,7 @@ export class ChildComponent implements OnInit {
 @Input() childMessage: string;
 
 // @Output() samaEvent = new EventEmitter<string>();
-   message ="Hello guys !";
+  //  message ="Hello guys !";
   constructor() { }
 
   ngOnInit(): void {
